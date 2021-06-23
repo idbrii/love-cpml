@@ -31,18 +31,22 @@
   <li><a href="../index.html">Index</a></li>
 </ul>
 
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
 
 
 <h2>Modules</h2>
 <ul class="nowrap">
   <li><a href="../modules/bound2.html">bound2</a></li>
   <li><a href="../modules/bound3.html">bound3</a></li>
-  <li><a href="../modules/bvh.html">bvh</a></li>
+  <li><strong>bvh</strong></li>
   <li><a href="../modules/color.html">color</a></li>
   <li><a href="../modules/constants.html">constants</a></li>
   <li><a href="../modules/intersect.html">intersect</a></li>
   <li><a href="../modules/mat4.html">mat4</a></li>
-  <li><strong>mesh</strong></li>
+  <li><a href="../modules/mesh.html">mesh</a></li>
   <li><a href="../modules/octree.html">octree</a></li>
   <li><a href="../modules/quat.html">quat</a></li>
   <li><a href="../modules/simplex.html">simplex</a></li>
@@ -59,18 +63,79 @@
 
 <div id="content">
 
-<h1>Module <code>mesh</code></h1>
-<p>Mesh utilities</p>
+<h1>Module <code>bvh</code></h1>
+<p>BVH Tree</p>
 <p>
 
 </p>
 
 
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#OctreeNode:draw_bounds">OctreeNode:draw_bounds (cube, depth)</a></td>
+	<td class="summary">Draws node boundaries visually for debugging.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#OctreeNode:draw_objects">OctreeNode:draw_objects (cube, filter)</a></td>
+	<td class="summary">Draws the bounds of all objects in the tree visually for debugging.</td>
+	</tr>
+</table>
 
 <br/>
 <br/>
 
 
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "OctreeNode:draw_bounds"></a>
+    <strong>OctreeNode:draw_bounds (cube, depth)</strong>
+    </dt>
+    <dd>
+    Draws node boundaries visually for debugging.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cube</span>
+         Cube model to draw
+        </li>
+        <li><span class="parameter">depth</span>
+         Used for recurcive calls to self method
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "OctreeNode:draw_objects"></a>
+    <strong>OctreeNode:draw_objects (cube, filter)</strong>
+    </dt>
+    <dd>
+    Draws the bounds of all objects in the tree visually for debugging.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cube</span>
+         Cube model to draw
+        </li>
+        <li><span class="parameter">filter</span>
+         a function returning true or false to determine visibility.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
 
 
 </div> <!-- id="content" -->
